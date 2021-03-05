@@ -1,0 +1,203 @@
+/* CSS Document */
+
+/*.span1 i {
+    position: absolute;
+    margin: 2px 80px;
+    cursor: pointer;
+}*/
+.span2 i {
+    position: relative;
+    float:right;
+    cursor: pointer;
+	margin:5px 10px 5px 3px;
+	
+}
+.span1 i {
+    position: relative;
+    float:right;
+    cursor: pointer;
+	margin:0px;
+}
+.btn-files, .btn-file {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    background: #e4e4e4 no-repeat center center;
+    text-align: center;
+    line-height: 36px;
+    font-size:16px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    margin:auto 40px;
+    float:left;
+    overflow: hidden;
+}
+.btn-files input, .btn-file input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 156px;
+    height: 43px;
+    opacity: 0;
+    filter: alpha(opacity: 0);
+    cursor: pointer;
+}
+.img-list-li{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #CCC;
+    cursor: default;
+    margin: 5px 0 0 5px;
+}
+.upload-img{
+    display: inline-block;
+    width: 71px;
+    height: 53px;
+    background-image: url('/resource/images/upload2.png');
+}
+.upload-form,.cover{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 81px;
+    height: 63px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.tree {
+    min-height:20px;
+    padding:19px;
+    margin-bottom:20px;
+    background-color:#fbfbfb;
+    #border:1px solid #999;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px;
+    position:relative
+}
+.tree li::before, .tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto
+}
+.tree li::before {
+    border-left:1px solid #999;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width:1px
+}
+.tree li::after {
+    border-top:1px solid #999;
+    height:20px;
+    top:29px;
+    width:25px
+}
+.tree li div {
+    position: absolute;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #999;
+    background-color:#fff;
+    border-radius:5px;
+    display:inline-block;
+    padding:3px 8px;
+    display: none;
+}
+.tree li div.edit{
+    margin:-34px 0px 0px 120px;
+}
+.tree li div.add{
+    margin:-34px 0px 0px 153px;
+}
+.tree li span {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #999;
+    border-radius:5px;
+    display:inline-block;
+    padding:3px 8px;
+    text-decoration:none
+}
+.tree li.parent_li>span {
+    cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:30px
+}
+.tree li.parent_li>span:hover, .tree li.parent_li>span:hover+ul li span {
+    background:#eee;
+    border:1px solid #94a0b4;
+    color:#000
+}
+.panel-default .panel-heading{
+   color: #333;
+   background-color: #f5f5f5;
+   border-color: #ddd;
+}
+.panel-group .panel{
+margin-bottom: 0;
+overflow: hidden;
+border-radius: 4px;
+}
+.panel {
+margin-bottom: 20px;
+background-color: #fff;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+.panel-default {
+border-color: #ddd;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 500;
+line-height: 1.1;
+color: inherit;
+}
+.panel-heading {
+padding: 10px 15px;
+border-bottom: 1px solid transparent;
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+}
+.panel-group .panel+.panel {
+margin-top: 10px;
+}
+.default_table.selectable_table thead td{
+border-right:1px solid #d7d7d7;
+}
+.default_table.selectable_table tbody td{
+padding:1px 1px;
+height:30px;
+border-right:1px solid #d7d7d7;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+
+.photos{max-height:150px;
+}
+.span2 a.thumbnail{height:175px;cursor:Default;
+}
